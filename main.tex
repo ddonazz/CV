@@ -45,18 +45,20 @@
 
 \newcommand{\lefttabmargin}{0.025in}
 
-\newcommand{\resumeItem}[1]{
+\newcommand{\resumeItem}[1]{%
     \item\small{
-        {#1 \vspace{-2pt}}
-      }
+        \begin{minipage}[t]{0.92\textwidth} 
+            #1
+        \end{minipage}
+        \vspace{-2pt}
+    }
 }
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabularx}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabularx}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -84,9 +86,11 @@
 \begin{document}
 
 \begin{minipage}{0.6\textwidth}
-    \textbf{\huge Andrea Donadello} \\
+    \textbf{\huge Andrea Donadello} \vspace{0.3cm} \\
+    Jesolo - Venice (Italy) \\
+    April 28, 2000 \vspace{0.3cm} \\  
     \href{mailto:andreadonadello@outlook.com}{\ul{andreadonadello@outlook.com}} \\
-    \href{https://linkedin.com/in/andreadonadello}{\ul{linkedin.com/in/andreadonadello}} \\
+    \href{https://linkedin.com/in/andreadonadello}{\ul{linkedin.com/in/andreadonadello}} |
     \href{https://github.com/adonadello}{\ul{github.com/adonadello}} \\
 \end{minipage}
 \hfill
@@ -106,8 +110,13 @@
     \resumeSubHeadingListStart
 
         \resumeSubheading
+            {Master's Degree in Big Data (Computer Engineering)}
+            {Jun. 2024 - Present}
+            {International Telematic UniNettuno University}
+            {Rome, Italy}
+        \resumeSubheading
             {Bachelor's Degree in Computer Engineering}
-            {Jan. 2020 - Dec. 2023}
+            {Jan. 2020 - Mar. 2024}
             {International Telematic UniNettuno University}
             {Rome, Italy}
         \resumeSubheading
@@ -122,14 +131,14 @@
 \section{Experience}
     \resumeSubHeadingListStart
 
-        \resumeSubheading{Software Backend Engineer}{June 2022 - Present}{Mediacy}{Venice, Italy}
+        \resumeSubheading{Software Backend Engineer}{June 2022 - Present}{Mediacy Srl}{Venice, Italy}
             \resumeItemListStart
-                \resumeItem{Maintenance, development, and deployment of web applications with Microservices Architecture and asynchronous routines}
-                \resumeItem{Extensive experience in using the Java programming language for Backend development}
-                \resumeItem{Implementation and integration of Backend services using SpringBoot. Configuration and optimization of SpringBoot applications to ensure efficiency and scalability}
-                \resumeItem{Utilization of PostgreSQL and Oracle databases for data storage and retrieval. Design and implementation of database schemas and queries for optimal performance}
-                \resumeItem{Deployment of applications using Docker containers for improved portability and scalability}
-                \resumeItem{Configuration and optimization of Tomcat or WildFly as web servers for hosting Java-based web applications}
+                \resumeItem{Managed, developed, and deployed web applications using Microservices Architecture and asynchronous routines.}
+                \resumeItem{Extensive experience in Java for backend development.}
+                \resumeItem{Implemented and integrated backend services with SpringBoot, focusing on configuration and optimization for efficiency and scalability.}
+                \resumeItem{Utilized PostgreSQL and Oracle databases for data storage, designing schemas and queries to ensure optimal performance.}
+                \resumeItem{Deployed applications using Docker containers to enhance portability and scalability.}
+                \resumeItem{Configured and optimized Tomcat and WildFly as web servers for hosting Java-based applications.}
             \resumeItemListEnd
         
     \resumeSubHeadingListEnd
@@ -140,22 +149,22 @@
 
         \resumeProjectHeading{Backend Projects}{Java, SpringBoot, PostgreSQL, Oracle, Tomcat, Wildfly}{June 2022 -- Present}
             \resumeItemListStart
-                \resumeItem{Proficient in utilizing SpringBoot framework for accelerated development of Java-based backend applications}
-                \resumeItem{Developed RESTful APIs and Microservices using SpringBoot for efficient communication between components}
-                \resumeItem{Implementation of backend logic and algorithms in Java to meet specific project requirements}
-                \resumeItem{Implementation and integration of Backend services using SpringBoot. Configuration and optimization of SpringBoot applications to ensure efficiency and scalability}
-                \resumeItem{Designed and implemented RESTful APIs to facilitate seamless communication between frontend and backend systems. Ensured adherence to RESTful principles for a standardized and intuitive API design}
-                \resumeItem{Constantly monitored and optimized backend performance for optimal response times and resource utilization}
-                \resumeItem{Collaborated effectively with cross-functional teams, including frontend developers, UX/UI designers, and project managers}
+                \resumeItem{Utilized SpringBoot to develop efficient Java-based backend applications.}
+                \resumeItem{Built RESTful APIs and microservices with SpringBoot for smooth inter-component communication.}
+                \resumeItem{Implemented backend logic and algorithms in Java to fulfill project requirements.}
+                \resumeItem{Optimized and configured SpringBoot applications for enhanced performance and scalability.}
+                \resumeItem{Designed RESTful APIs for seamless frontend-backend integration, following RESTful principles.}
+                \resumeItem{Monitored and optimized backend performance for fast response times and efficient resource use.}
+                \resumeItem{Collaborated with frontend developers, UX/UI designers, and project managers to achieve project goals.}
             \resumeItemListEnd
         \resumeProjectHeading{\href{https://github.com/adonadello/thesis}{\ul{Machine Learning Pipeline}}}{Scala, Akka, Kafka, Spark, Hadoop}{November 2023}
             \resumeItemListStart
-                \resumeItem{Developed a robust and supervised data processing pipeline in Scala to handle data flow and orchestration}
-                \resumeItem{Implemented Apache Kafka for real-time, fault-tolerant data streaming within the pipeline. Configured Kafka topics and ensured seamless integration for data communication}
-                \resumeItem{Integrated Apache Spark for large-scale data processing, leveraging its distributed computing capabilities. Designed and implemented Spark jobs to process and analyze data efficiently}
-                \resumeItem{Utilized the Akka toolkit to implement the actor model for concurrent and distributed processing within the pipeline}
-                \resumeItem{Implemented data transformation and enrichment stages within the pipeline to enhance the quality and relevance of processed data}
-                \resumeItem{Applied Spark transformations and Akka actors to handle complex data manipulations}
+                \resumeItem{Developed a scalable data processing pipeline in Scala for efficient data flow and orchestration.}
+                \resumeItem{Used Apache Kafka for real-time, fault-tolerant data streaming, configuring topics for seamless integration.}
+                \resumeItem{Integrated Apache Spark for large-scale data processing, designing Spark jobs for efficient analysis.}
+                \resumeItem{Applied the Akka toolkit to implement concurrent and distributed processing using the actor model.}
+                \resumeItem{Enhanced data quality by implementing transformation and enrichment stages in the pipeline.}
+                \resumeItem{Leveraged Spark transformations and Akka actors for complex data manipulations.}
             \resumeItemListEnd
         
     \resumeSubHeadingListEnd
