@@ -22,7 +22,7 @@ To compile the LaTeX source code and generate the PDF, you'll need to have a LaT
 2. Navigate to the repository directory:
 
     ```sh
-        cd CV
+    cd CV
     ```
 
 3. Compile the LaTeX source code to produce the PDF:
@@ -48,7 +48,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 If you have any questions or suggestions, please feel free to open an issue or contact me directly.
-
----
-
-Happy resume building!
