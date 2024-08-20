@@ -16,19 +16,19 @@ To compile the LaTeX source code and generate the PDF, you'll need to have a LaT
 1. Clone the repository to your local machine:
 
     ```sh
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/ddonazz/CV.git
     ```
 
 2. Navigate to the repository directory:
 
     ```sh
-    cd your-repository
+        cd CV
     ```
 
 3. Compile the LaTeX source code to produce the PDF:
 
     ```sh
-    pdflatex resume.tex
+    pdflatex main.tex
     ```
 
    You may need to run the `pdflatex` command multiple times to resolve cross-references and generate the final output.
